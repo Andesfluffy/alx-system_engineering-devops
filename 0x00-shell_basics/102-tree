@@ -1,2 +1,4 @@
 #!/bin/bash
-if mkdir welcome; then mkdir welcome/to; mkdir welcome/to/school; fi
+mkdir welcome
+mkdir welcome/to
+mkdir welcome/to/school
