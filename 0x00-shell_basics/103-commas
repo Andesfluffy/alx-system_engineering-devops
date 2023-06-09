@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A1 | sort -d | awk '{printf("%s%s%s,", $0, substr($0,length($0),1)~/[[:alnum:]]/?"":",",$0~/\/$/?"/":"")}' | sed 's/,$/\n/' >> 103-commas
+ls -p | LC_COLLATE=C sort -d -t $n -k1.1 | tr n , | sed s/,$/n/ > 103-commas
