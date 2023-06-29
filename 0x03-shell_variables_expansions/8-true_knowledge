@@ -1,2 +1,2 @@
 #!/bin/bash
-$((TRUEKNOWLEDGE + 128))
+TRUEKNOWLEDGE=42; result=$((TRUEKNOWLEDGE + 128)); echo $result
